@@ -1,6 +1,6 @@
-document.addEventListener('DOMContentLoaded', _ => {
-    alert("Welcome to my CV! Thanks for visiting.");
-});
+// document.addEventListener('DOMContentLoaded', _ => {
+//     alert("Welcome to my CV! Thanks for visiting.");
+// });
 
 const year1 = document.getElementById('year1');
 const year2 = document.getElementById('year2');
