@@ -1,70 +1,85 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>My CV - A2</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CV Webpage</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous" />
 </head>
 
 <body>
   <header>
-    <nav class="navbar navbar-expand-lg ff-nav sticky-top">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">LR | CV</a>
+    <nav class="navbar navbar-expand-lg navbar-dark ff-nav sticky-top">
+      <div class="container">
+        <a class="navbar-brand pink-glow" href="#">SAVIOR_CV</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="#intro">Intro</a></li>
             <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
             <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
             <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-            <li class="nav-item"><a class="nav-link" href="#intro">Portfolio</a></li>
+            <li class="nav-item"><a class="nav-link" href="#portfolio">Portfolio</a></li>
           </ul>
         </div>
       </div>
     </nav>
-    
-    <h1>A2</h1>
-    <p class="subtitle">Student | Chiang Mai</p>
-    <button id="contact-btn">Contact Me</button>
-    <p>
-      Email:
-      <a href="mailto:victoriavoneinzburg@gmail.com">victoriavoneinzburg@gmail.com</a>
-    </p>
   </header>
 
-  <section>
-    <h2>About Me</h2>
-    <p>Student at CAMT. Likes Cats.</p>
-  </section>
+  <main class="container my-5">
+    <div class="row g-4">
+      <div class="col-12 col-lg-8" id="intro">
+        <div class="ff-tile p-4 h-100">
+          <h1 class="display-4">A2</h1>
+          <p class="lead-text-pink">The Savior of CAMT</p>
+          <p>Current Status: Something</p>
+        </div>
+      </div>
 
-  <section>
-    <h2 class="education-title">Education</h2>
-    <h3>Chiang Mai University</h3>
-    <p>B.Sc (Software Engineering) | 2024 - 2028</p>
-    <h3>University of the People</h3>
-    <p>B.Sc (Computer Science) | 2022 - 2026</p>
-  </section>
+      <div class="col-12 col-lg-4" id="contact">
+        <div class="ff-tile p-4 h-100 text-center d-flex flex-column justify-content-center">
+          <button id="contact-btn" class="ff-btn mb-3">INITIATE CONTACT</button>
+          <div id="contact-info" class="contact-hide">
+            <a href="mailto:victoriavoneinzburg@gmail.com" class="text-white">victoriavoneinzburg@gmail.com</a>
+          </div>
+        </div>
+      </div>
 
-  <section>
-    <h2 class="skill-title">Skills</h2>
-    <ul>
-      <li>HTML &amp; CSS</li>
-      <li>Database Management</li>
-      <li>Languages</li>
-    </ul>
-  </section>
+      <div class="col-12" id="experience">
+        <div class="ff-tile p-4">
+          <h2 class="pink-glow mb-4">Experience</h2>
+          <div class="row">
+            <div class="col-md-6 border-end border-secondary border-opacity-25">
+              <h4 class="text-pink">Front-End Developer</h4>
+              <p class="text-secondary small">January 2025 - Present</p>
+              <ul>
+                <li>Developed responsive UI components using Bootstrap Grid systems.</li>
+                <li>Designed interactive elements using JavaScript event handling.</li>
+                <li>Managed layout breakpoints for Desktop, Tablet, and Mobile views.</li>
+              </ul>
+            </div>
+            <div class="col-md-6 ps-md-4">
+              <h4 class="text-pink">UI/UX Designer</h4>
+              <p class="text-secondary small">June 2024 - December 2024</p>
+              <ul>
+                <li>Created visual concepts inspired by futuristic game interfaces.</li>
+                <li>Optimized web content hierarchy for better audience engagement.</li>
+                <li>Ensured cross-platform compatibility for various viewports.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./script.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <script href="./script.js"></script>
 </body>
 
 </html>
