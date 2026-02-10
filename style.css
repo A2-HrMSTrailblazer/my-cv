@@ -24,7 +24,7 @@ body {
 
 .italic-glow {
   font-style: italic;
-  color: var(--ff-pink);
+  color: var(--ff-cyan);
   text-shadow: var(--ff-glow);
 }
 
@@ -110,6 +110,35 @@ body {
   opacity: 0;
 }
 
+.exp-item .badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem 1rem;
+  line-height: 1;
+  height: fit-content;
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+}
+
+.badge.rounded-pill {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  height: 28px;
+  padding: 0 15px;
+  line-height: 1;
+  font-size: 0.7rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+.bg-pink {
+  background-color: var(--ff-pink) !important;
+  border-radius: 4px !important;
+  padding: 2px 6px;
+}
+
 .progress {
   border-radius: 0;
   overflow: visible;
@@ -117,7 +146,7 @@ body {
 
 .progress-bar {
   box-shadow: 0 0 10px var(--ff-pink);
-  transition: width 1.5s ease-in-out;
+  transition: width 2s cubic-bezier(0.17, 0.67, 0, 83, 0.67);
 }
 
 .hobby-tag {
@@ -140,4 +169,33 @@ body {
 
 .text-end {
   text-align: right;
+}
+
+.carousel-item {
+  background-color: #050507;
+  height: 500px;
+}
+
+.carousel-item img {
+  height: 450px;
+  object-fit: contain;
+  filter: brightness(0.9);
+  padding: 20px;
+  background-color: black;
+}
+
+.carousel-caption {
+  position: relative;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 0, 127, 0.1);
+  border-top: 2px solid var(--ff-pink);
+  padding: 15px;
+  text-align: left;
+}
+
+.bg-dark-opacity {
+  background: rgba(0, 0, 0, 0.7);
+  border: 1px solid var(--ff-pink);
 }
