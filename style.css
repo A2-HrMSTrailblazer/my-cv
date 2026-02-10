@@ -66,7 +66,6 @@ body {
   letter-spacing: 1px;
 }
 
-/* Glassmorphism Tiles */
 .ff-tile {
   background: var(--ff-crystal);
   border: 1px solid var(--ff-border);
@@ -84,15 +83,14 @@ body {
   border-color: var(--ff-pink);
 }
 
-/* Text Elements */
 .text-pink {
   color: var(--ff-pink);
 }
+
 .pink-glow {
   text-shadow: 0 0 10px var(--ff-pink);
 }
 
-/* Buttons */
 .ff-btn {
   background: transparent;
   border: 1px solid var(--ff-pink);
@@ -107,8 +105,39 @@ body {
   box-shadow: 0 0 20px var(--ff-pink);
 }
 
-/* Helper for interaction */
 .contact-hide {
   display: none;
   opacity: 0;
+}
+
+.progress {
+  border-radius: 0;
+  overflow: visible;
+}
+
+.progress-bar {
+  box-shadow: 0 0 10px var(--ff-pink);
+  transition: width 1.5s ease-in-out;
+}
+
+.hobby-tag {
+  font-size: 10px;
+  font-weight: 700;
+  padding: 4px 12px;
+  border: 1px solid var(--ff-border);
+  border-radius: 20px;
+  color: white;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.hobby-tag:hover {
+  border-color: var(--ff-pink);
+  background: rgba(255, 0, 127, 0.1);
+  color: var(--ff-pink);
+}
+
+.text-end {
+  text-align: right;
 }
